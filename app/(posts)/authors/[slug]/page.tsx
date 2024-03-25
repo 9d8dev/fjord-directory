@@ -55,6 +55,7 @@ export default async function Page({
           <ContentGrid id="posts">
             {posts.map((post: PostProps) => (
               <PostCard
+                directory="blog"
                 key={post.id}
                 post={post}
                 tags={post._embedded["wp:term"]?.[0] ?? []}
