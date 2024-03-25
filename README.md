@@ -17,7 +17,7 @@ See a demo here: [fjord.dev](https://fjord.dev)
 3. Configure the **Wordpress REST API** in your Wordpress instance
 4. Edit `fjord.config.ts` to map to your WordPress instance and customize the website
 
-## Directory 
+## Directory
 
 ```bash
 fjord
@@ -99,7 +99,7 @@ fjord
 └── tsconfig.json
 ```
 
-## Technologies 
+## Technologies
 
 - Next JS App Directory
 - WordPress Rest API

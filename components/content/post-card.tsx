@@ -9,7 +9,7 @@ const PostTag = ({ name, id }: TagProps) => (
   </Badge>
 );
 
-const PostCard = ({ post, tags = [] }: PostCardProps) => {
+const PostCard = ({ post, directory, tags = [] }: PostCardProps) => {
   const featuredMedia =
     post._embedded["wp:featuredmedia"]?.[0]?.media_details?.sizes?.full
       ?.source_url;
@@ -18,7 +18,7 @@ const PostCard = ({ post, tags = [] }: PostCardProps) => {
   return (
     <Link
       id="post-card"
-      href={`/posts/${post.slug}`}
+      href={`/${directory}/${post.slug}`}
       className="group flex flex-col not-prose gap-2 transition-all hover:-mt-1 hover:mb-1"
       key={post.id}
     >

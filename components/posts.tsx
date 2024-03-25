@@ -1,7 +1,6 @@
 // Fjord Config
 import fjord from "@/fjord.config";
 
-// Component Imports
 import * as Craft from "@/components/craft";
 import PostCard from "@/components/content/post-card";
 import ContentGrid from "@/components/content/content-grid";
@@ -41,13 +40,13 @@ export default async function Posts({
           <ContentGrid id="posts">
             {data.map((post: PostProps) => (
               <PostCard
+                directory="blog"
                 key={post.id}
                 post={post}
                 tags={post._embedded["wp:term"]?.[0] ?? []}
               />
             ))}
           </ContentGrid>
-          <Separator className="my-6 md:my-12" />
           <PaginationWrapper page={page} lastPage={lastPage} />
         </Craft.Container>
       </Craft.Section>

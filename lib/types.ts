@@ -90,6 +90,7 @@ type PaginationProps = {
 type PostCardProps = {
   post: PostProps;
   tags?: any;
+  directory: string;
 };
 
 type ContentGridProps = {
