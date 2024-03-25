@@ -27,7 +27,7 @@ export default async function RecentPosts({
           </h4>
           <div className="m-auto grid max-w-6xl gap-6 sm:grid-cols-2 md:grid-cols-3 mt-6 md:mt-12">
             {filteredPosts.map((post: PostProps) => (
-              <PostCard key={post.id} post={post} />
+              <PostCard directory="blog" key={post.id} post={post} />
             ))}
           </div>
         </div>
