@@ -19,15 +19,15 @@ const fjord: FjordProps = {
   menu: {
     main: {
       home: "/", // Don't Change
-      blog: "/posts", // default is `/posts`
+      blog: "/blog", // default is `/blog`
       about: "/about", // you can remove this if you don't want an about page
       contact: "/contact", // you can remove this if you don't want a contact page
     },
     content: {
-      authors: "/posts/authors", // default is `/posts/authors`
-      categories: "/posts/categories", // default is `/posts/categories`
-      tags: "/posts/tags", // default is `/posts/tags`
-      pages: "/all", // default is `/all`
+      authors: "/blog/authors", // default is `/blog/authors`
+      categories: "/blog/categories", // default is `/blog/categories`
+      tags: "/blog/tags", // default is `/blog/tags`
+      pages: "/pages", // default is `/pages`
     },
     legal: {
       privacy_policy: "/privacy-policy", // default is `/privacy-policy`
@@ -54,13 +54,13 @@ const fjord: FjordProps = {
           "Get in touch with us if you have any questions or feedback. We would love to hear from you.",
       },
       {
-        title: "All Pages",
-        href: "/all",
+        title: "Pages",
+        href: "/pages",
         description: "A list of all the pages on this site.",
       },
       {
         title: "Authors",
-        href: "/posts/authors",
+        href: "/blog/authors",
         description: "A list of all the authors on this site.",
       },
     ],

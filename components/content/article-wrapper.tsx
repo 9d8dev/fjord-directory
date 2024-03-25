@@ -19,7 +19,7 @@ const Article = ({ post, date, author }: ArticleProps) => {
           {author && (
             <Link
               className="transition-all hover:opacity-70"
-              href={`/posts/authors/${author.slug}`}
+              href={`/blog/authors/${author.slug}`}
             >
               {author.name}
             </Link>

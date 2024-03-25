@@ -3,7 +3,11 @@ import Balancer from "react-wrap-balancer";
 import Posts from "@/components/posts";
 import CTA from "@/components/cta";
 
-export default function Home() {
+export default function Home({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined };
+}) {
   return (
     <Craft.Main>
       <Craft.Section className="border-b bg-accent">
@@ -29,7 +33,7 @@ export default function Home() {
           </p>
         </Craft.Container>
       </Craft.Section>
-      <Posts searchParams={{}} />
+      <Posts searchParams={searchParams} />
       <CTA />
     </Craft.Main>
   );

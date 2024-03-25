@@ -5,7 +5,6 @@ import * as Craft from "@/components/craft";
 import PostCard from "@/components/content/post-card";
 import ContentGrid from "@/components/content/content-grid";
 import PaginationWrapper from "@/components/content/pagination-wrapper";
-import { Separator } from "@/components/ui/separator";
 
 // Next Imports
 import type { Metadata } from "next";
